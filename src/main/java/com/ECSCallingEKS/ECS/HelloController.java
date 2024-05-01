@@ -14,7 +14,7 @@ public class HelloController {
 
     @RequestMapping("/callEks1")
     private String getEks1() {
-        String uri = "http://af5b98aad8a324f06886c662d1bc0fe3-931780699.us-east-1.elb.amazonaws.com/eks1/user";
+        String uri = "http://a22096baa48b247a08514786e6840e4c-1521195377.us-east-1.elb.amazonaws.com/eks1/user";
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(uri, String.class);
         return result;
@@ -22,7 +22,7 @@ public class HelloController {
 
     @RequestMapping("/callEks2")
     private String getEks2() {
-        String uri = "http://af8358252bf6d43f2a4b20e1f9cb87a6-727203431.us-east-1.elb.amazonaws.com/eks2/user";
+        String uri = "http://a6b71ac5b6ecf46d6ac1c558efcce18b-1615111697.us-east-1.elb.amazonaws.com/eks2/user";
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(uri, String.class);
         return result;
