@@ -27,4 +27,6 @@ public class HelloController {
         String result = restTemplate.getForObject(uri, String.class);
         return result;
     }
+
+
 }
